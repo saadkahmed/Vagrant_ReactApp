@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import {Link} from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -11,13 +10,18 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import AssignmentIcon from '@material-ui/icons/Assignment'; 
 
+const handleClick = () => {
+  console.log("poop");
+}
+
 export const mainListItems = (
-  <div>
+  <React.Fragment>
+    
     <ListItem button>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Login" />
+      <ListItemText primary="Log In" />
     </ListItem>
 
     <ListItem button>
@@ -41,8 +45,7 @@ export const mainListItems = (
       <ListItemText primary="Reports" />
     </ListItem>
 
-
-  </div>
+  </React.Fragment>
 );
 
 export const secondaryListItems = (

@@ -46,13 +46,13 @@ class Login extends Component {
 
     return (
       <div style={styles.main}>
+        <Typography component="h1" variant="h5">
+            Create an Account
+        </Typography>
         <Paper style={styles.paperStyle}>
             <Avatar>
                 <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
-                    Sign In
-            </Typography>
             <form onSubmit={this.handleSubmit}>
                 <FormControl>
                     <InputLabel htmlFor="email">Email Address</InputLabel>

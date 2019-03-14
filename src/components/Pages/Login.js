@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -54,7 +55,6 @@ class Login extends Component {
             <Avatar>
                 <LockOutlinedIcon />
             </Avatar>
-
             <form onSubmit={this.handleSubmit}>
                 <FormControl>
                     <InputLabel htmlFor="email">Email Address</InputLabel>
